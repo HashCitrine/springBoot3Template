@@ -1,0 +1,20 @@
+logging:
+  level:
+    root : info
+    octopus: debug
+    org.springframework: WARN
+  pattern:
+    console: "%-5level %d{yy-MM-dd HH:mm:SSS}[%thread] %logger.%method[%line]: - %msg%n"
+    file: "%-5level %d{yy-MM-dd HH:mm:SSS}[%thread] %logger.%method[%line]: - %msg%n"
+  file:
+    name: logs/template.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      max-history: 31
+      file-name-pattern: template.%d{yyyy-MM-dd}.%i.gz
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true

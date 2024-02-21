@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    include: db, eureka, log, monitor
+  application:
+    name: template
+  threads:
+    virtual:
+      enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger
