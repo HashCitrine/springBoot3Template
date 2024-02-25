@@ -13,8 +13,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Temp {
-	@Id
-	Long id;
 
-	String name;
+  @Id
+  Long id;
+
+  String name;
 }
