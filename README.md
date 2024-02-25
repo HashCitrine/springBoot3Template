@@ -22,3 +22,4 @@
 - [[Spring Boot] Application.yml 설정 - Hibernate – SQL Dialects](https://hermeslog.tistory.com/682)
 - [[Spring] mapstruct 사용법 (with custom method로 매핑)](https://marklee1117.tistory.com/121)
 - [Spring Boot 3 × Java 21にGradleでCheckStyleを適用する](https://n-laboratory.jp/articles/springboot-gradle-checkstyle)
+- [Google Android Platform checkstyle Suppressions](https://android.googlesource.com/platform/external/checkstyle/+/HEAD/config/suppressions.xml)
