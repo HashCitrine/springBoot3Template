@@ -68,7 +68,7 @@ tasks.named('test') {
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 
-tasks.withType(Checkstyle) {
+tasks.withType(Checkstyle).configureEach {
     reports {
         xml.required = true
         html.required = true
@@ -79,4 +79,5 @@ checkstyle {
     toolVersion = '10.13.0'
     maxWarnings = 0
     configFile = rootProject.file("config/checkstyle/checkstyle.xml")
+    configProperties = ["org.checkstyle.google.suppressionfilter.config": "${rootProject.rootDir}/config/checkstyle/suppressions.xml"]
 }

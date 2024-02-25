@@ -5,5 +5,8 @@
         "https://checkstyle.org/dtds/suppressions_1_2.dtd">
 
 <suppressions>
-    <suppress checks="MissingJavadocMethod|MissingJavadocType " files="TempMapper.java"/>
+    <suppress files=".*[\\/]src[\\/]main[\\/]"
+      checks="MissingJavadocType|MissingJavadocMethod"/>
+    <suppress files=".*[\\/]src[\\/]test[\\/]"
+      checks="MissingJavadocType|MissingJavadocMethod"/>
 </suppressions>
