@@ -8,8 +8,9 @@
 - [x] Actuator(prometheus, zipkin)([ref](https://easywritten.com/post/using-spring-boot-3-with-zipkin/))
 - [x] Eureka client([ref](https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html))
 - [x] CORS(WebMvcConfigurer)([ref](https://jake-seo-dev.tistory.com/605))
-- [ ] CheckStyle(Google)([ref](https://checkstyle.sourceforge.io/google_style.html))
-- [ ] Intellij Code Style(Google)([ref](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml))
+- [x] MapStruct(Model Mapping)([ref](https://mapstruct.org/documentation/stable/reference/html/))
+- [x] CheckStyle(Google)([ref](https://checkstyle.sourceforge.io/google_style.html))
+- [x] Intellij Code Style(Google)([ref](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml))
 - [ ] Jacoco([ref](https://docs.gradle.org/current/userguide/jacoco_plugin.html))
 - [ ] ExceptionHandler
 
@@ -19,3 +20,5 @@
 - [실전! Spring Boot 3 마이그레이션](https://techblog.lycorp.co.jp/ko/how-to-migrate-to-spring-boot-3)
 - [Spring Boot + Swagger 3 example (with OpenAPI 3)](https://www.bezkoder.com/spring-boot-swagger-3/)
 - [[Spring Boot] Application.yml 설정 - Hibernate – SQL Dialects](https://hermeslog.tistory.com/682)
+- [[Spring] mapstruct 사용법 (with custom method로 매핑)](https://marklee1117.tistory.com/121)
+- [Spring Boot 3 × Java 21にGradleでCheckStyleを適用する](https://n-laboratory.jp/articles/springboot-gradle-checkstyle)
