@@ -2,8 +2,10 @@ package com.example.template.controller;
 
 import com.example.template.dto.res.ResTemp;
 import com.example.template.entity.Temp;
+import com.example.template.exception.ResponseException;
 import com.example.template.service.TempService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,5 +32,10 @@ public class TempController {
   @PostMapping("/temp")
   ResponseEntity<ResTemp> saveTemp(@RequestBody Temp temp) {
     return ResponseEntity.ok(tempService.saveTemp(temp));
+  }
+
+  @GetMapping("/")
+  void throwErr() {
+    throw new ResponseException(HttpStatus.INTERNAL_SERVER_ERROR, "Test Error");
   }
 }
